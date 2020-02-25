@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * MB "Vienas bitas" (Magetrend.com)
+ *
+ * @category MageTrend
+ * @package  Magetend/Attachment
+ * @author   E. Stulpinas <edwin@magetrend.com>
+ */
+ -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../lib/internal/Magento/Framework/ObjectManager/etc/config.xsd">
+
+    <type name="Magento\Framework\Mail\Template\TransportBuilder">
+        <plugin name="magetrend-attachment-transport-builder" type="Magetrend\Attachment\Plugin\TransportBuilder"/>
+    </type>
+
+    <type name="Magento\Framework\Mail\MimeMessage">
+        <plugin name="magetrend-attachment-mimemessage" type="Magetrend\Attachment\Plugin\MimeMessage"/>
+    </type>
+
+</config>
